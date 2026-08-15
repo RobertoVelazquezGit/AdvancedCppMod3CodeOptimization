@@ -53,6 +53,7 @@ public:
     }
 };
 
+// Structure of Arrays implementation   
 class ParticleSystemSoA {
 private:
     std::vector<double> x, y, z, vx, vy, vz, mass;
