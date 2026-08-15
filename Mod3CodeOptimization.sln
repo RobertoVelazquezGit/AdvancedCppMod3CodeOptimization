@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36811.4 d17.14
+VisualStudioVersion = 17.14.36811.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoLayoutOptimization", "MemoLayoutOptimization\MemoLayoutOptimization.vcxproj", "{3E79CF26-871A-49DC-9D05-A630746A1B4D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlgorithmComplexityOptimization", "AlgorithmComplexityOptimization\AlgorithmComplexityOptimization.vcxproj", "{847AD6DF-0C5A-482E-899A-145EBD1DD46F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{3E79CF26-871A-49DC-9D05-A630746A1B4D}.Release|x64.Build.0 = Release|x64
 		{3E79CF26-871A-49DC-9D05-A630746A1B4D}.Release|x86.ActiveCfg = Release|Win32
 		{3E79CF26-871A-49DC-9D05-A630746A1B4D}.Release|x86.Build.0 = Release|Win32
+		{847AD6DF-0C5A-482E-899A-145EBD1DD46F}.Debug|x64.ActiveCfg = Debug|x64
+		{847AD6DF-0C5A-482E-899A-145EBD1DD46F}.Debug|x64.Build.0 = Debug|x64
+		{847AD6DF-0C5A-482E-899A-145EBD1DD46F}.Debug|x86.ActiveCfg = Debug|Win32
+		{847AD6DF-0C5A-482E-899A-145EBD1DD46F}.Debug|x86.Build.0 = Debug|Win32
+		{847AD6DF-0C5A-482E-899A-145EBD1DD46F}.Release|x64.ActiveCfg = Release|x64
+		{847AD6DF-0C5A-482E-899A-145EBD1DD46F}.Release|x64.Build.0 = Release|x64
+		{847AD6DF-0C5A-482E-899A-145EBD1DD46F}.Release|x86.ActiveCfg = Release|Win32
+		{847AD6DF-0C5A-482E-899A-145EBD1DD46F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
