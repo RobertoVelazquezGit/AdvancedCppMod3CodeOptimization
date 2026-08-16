@@ -112,6 +112,16 @@ int main()
     // ==========================================================
 
     std::vector<std::vector<double>> A(matrixSize, std::vector<double>(matrixSize));
+/*
+  The same as
+    std::vector<std::vector<double>> A;
+    A.resize(matrixSize); // rows
+    for (auto& row : A)
+    {
+        row.resize(matrixSize); // columns
+    }
+*/
+
 
     std::vector<std::vector<double>> B(matrixSize, std::vector<double>(matrixSize));
 
