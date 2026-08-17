@@ -1,0 +1,56 @@
+Which of the following techniques helps reduce dynamic memory allocation overhead by pre-allocating memory blocks for future use?
+Big O Notation
+Cache Optimization
+Memory Pool Allocation #
+Constant Propagation
+
+When analyzing algorithm efficiency, which Big O notation indicates the best potential time complexity for searching in a well-structured data set?
+O(n^2)
+O(n!)
+O(n)
+O(log n) #
+Comparación de las opciones:
+❌ O(n²): típico de algoritmos de ordenación simples como Bubble Sort.
+❌ O(n!): extremadamente ineficiente (problemas de permutaciones).
+❌ O(n): búsqueda lineal.
+✅ O(log n): búsqueda binaria y otras estructuras eficientes.
+
+What is the primary purpose of compiler optimizations in C++ applications?
+To ensure consistent formatting of code according to style guidelines
+To automatically update outdated library dependencies
+To introduce additional debugging levels for error detection
+To enhance runtime performance by transforming code #
+
+Which optimization technique directly addresses algorithm improvements by focusing on reducing complex operations and enhancing data structures for better performance?
+Compile-Time Programming
+Memory Layout Optimization
+Algorithmic Optimization #
+Pragma Directives
+Las otras opciones se enfocan en aspectos distintos:
+❌ Compile-Time Programming: mueve cálculos al tiempo de compilación.
+❌ Memory Layout Optimization: mejora la localidad de datos y el uso de caché.
+❌ Pragma Directives: proporcionan indicaciones al compilador para ciertas optimizaciones.
+
+You are optimizing a data-intensive application that processes large datasets in real time.
+Explain how memory optimization strategies (such as cache-friendly layouts or memory pools) could improve performance.
+Describe how you would use Big O notation to evaluate the algorithm’s efficiency and identify potential bottlenecks.
+Discuss the role of compiler optimizations and pragma directives in improving runtime performance.
+Provide one example of how constexpr or compile-time programming could reduce runtime costs.
+Memory optimization is critical in data-intensive applications because modern CPUs are often limited by memory access speed rather than raw computation power. Using cache-friendly data layouts improves spatial and temporal locality, allowing the processor to load and reuse data efficiently from the CPU cache. For example, storing related data contiguously in memory reduces cache misses and improves throughput. Memory pools can also improve performance by pre-allocating memory blocks and reusing them instead of repeatedly calling new and delete, reducing allocation overhead and memory fragmentation.
+
+Big O notation is used to evaluate how the execution time or memory usage of an algorithm scales as the input size grows. For example, a linear search has a complexity of O(n), while a binary search has O(log n). By analyzing the complexity of each major operation, it is possible to identify bottlenecks. If a critical section of code has O(n²) complexity and processes large datasets, it is likely to become a performance problem and may need to be replaced with a more efficient algorithm or data structure.
+
+Compiler optimizations improve runtime performance by transforming code into a more efficient machine-code representation. Common optimizations include function inlining, dead-code elimination, loop optimizations, and vectorization. Pragma directives provide additional hints to the compiler. For example, loop unrolling pragmas may reduce loop overhead and expose more opportunities for instruction-level parallelism. While compiler optimizations can significantly improve performance, they generally cannot compensate for an inefficient algorithm.
+
+One example of compile-time programming is using constexpr to compute values during compilation instead of at runtime. For instance, a lookup table or a mathematical constant can be generated at compile time:
+
+constexpr int factorial(int n) {
+    return n <= 1 ? 1 : n * factorial(n - 1);
+}
+
+
+constexpr int result = factorial(10);
+
+In this example, factorial(10) is evaluated during compilation, eliminating the runtime computation cost and potentially reducing execution time for frequently used values.
+
+
