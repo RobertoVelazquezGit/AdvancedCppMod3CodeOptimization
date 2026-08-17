@@ -196,6 +196,7 @@ public:
 };
 
 // SOLUTION: Sorting algorithm optimizations
+// Ordering from small to large for better cache performance    
 class SortingOptimization {
 public:
     // Bubble sort - O(n²) - inefficient but simple
@@ -204,7 +205,7 @@ public:
         for (size_t i = 0; i < n - 1; ++i) {
             for (size_t j = 0; j < n - i - 1; ++j) {
                 if (data[j] > data[j + 1]) {
-                    swap(data[j], data[j + 1]);
+					swap(data[j], data[j + 1]);  // the bigger element bubbles to the end   
                 }
             }
         }
@@ -495,7 +496,7 @@ void testAlgorithmOptimizations() {
         SortingOptimization::hybridSort(data);
         };
 
-    double bubbleTime = tester.measurePerformance(bubbleTest, "Bubble Sort O(n²)");
+    double bubbleTime = tester.measurePerformance(bubbleTest, "Bubble Sort O(n^2)");
     double stlTime = tester.measurePerformance(stlTest, "STL Sort O(n log n)");
     double hybridTime = tester.measurePerformance(hybridTest, "Hybrid Sort");
 
@@ -589,7 +590,7 @@ int main() {
     cout << "\n=== Lab Complete! ===" << endl;
     cout << "- Structure of Arrays (SoA) for better cache locality" << endl;
     cout << "- Memory pools for efficient allocation patterns" << endl;
-    cout << "- Algorithm complexity optimization (O(n²) -> O(n log n))" << endl;
+    cout << "- Algorithm complexity optimization (O(n^2) -> O(n log n))" << endl;
     cout << "- Search algorithm optimization (O(n) -> O(log n) -> O(1))" << endl;
     cout << "- Loop interchange for better cache utilization" << endl;
     cout << "- Loop unrolling for reduced overhead" << endl;
