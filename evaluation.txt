@@ -36,6 +36,7 @@ Explain how memory optimization strategies (such as cache-friendly layouts or me
 Describe how you would use Big O notation to evaluate the algorithm’s efficiency and identify potential bottlenecks.
 Discuss the role of compiler optimizations and pragma directives in improving runtime performance.
 Provide one example of how constexpr or compile-time programming could reduce runtime costs.
+
 Memory optimization is critical in data-intensive applications because modern CPUs are often limited by memory access speed rather than raw computation power. Using cache-friendly data layouts improves spatial and temporal locality, allowing the processor to load and reuse data efficiently from the CPU cache. For example, storing related data contiguously in memory reduces cache misses and improves throughput. Memory pools can also improve performance by pre-allocating memory blocks and reusing them instead of repeatedly calling new and delete, reducing allocation overhead and memory fragmentation.
 
 Big O notation is used to evaluate how the execution time or memory usage of an algorithm scales as the input size grows. For example, a linear search has a complexity of O(n), while a binary search has O(log n). By analyzing the complexity of each major operation, it is possible to identify bottlenecks. If a critical section of code has O(n²) complexity and processes large datasets, it is likely to become a performance problem and may need to be replaced with a more efficient algorithm or data structure.
